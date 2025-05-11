@@ -40,7 +40,6 @@
       color: white !important;
     }
 
-    /* Sidebar Styles */
     .sidebar {
       width: 250px;
       position: fixed;
@@ -76,7 +75,6 @@
       margin-top: 40px;
     }
 
-    /* For responsive layout */
     @media (max-width: 768px) {
       .sidebar {
         width: 100%;
@@ -86,7 +84,7 @@
 
       .main-content {
         padding: 1rem;
-        width: 70%; /* Make main content take 70% of the screen */
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -101,12 +99,10 @@
         margin-bottom: 0.5rem;
       }
 
-      /* Move the "iOS/UWP Developer" title above the avatar */
       .sidebar-info .title {
         margin-bottom: 10px;
       }
 
-      /* Remove the "Show Contacts" button */
       .info_more-btn {
         display: none;
       }
@@ -124,7 +120,6 @@
       display: block;
     }
 
-    /* Image styling */
     .project-image {
       max-width: 100%;
       height: auto;
@@ -255,11 +250,9 @@
       link.addEventListener("click", () => {
         const target = link.textContent.trim().toLowerCase();
 
-        // Update active link
         navLinks.forEach(btn => btn.classList.remove("active"));
         link.classList.add("active");
 
-        // Show corresponding page
         pages.forEach(page => {
           page.classList.toggle("active", page.dataset.page === target);
         });
@@ -267,7 +260,6 @@
     });
   </script>
 
-  <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
