@@ -15,8 +15,8 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #121212; /* Dark background */
-      color: white !important; /* Force text color to white */
+      background-color: #121212;
+      color: white !important;
     }
 
     article {
@@ -24,11 +24,11 @@
     }
 
     h1, h2, h3, h4, h5, h6, p, li, span, a, button {
-      color: inherit !important; /* Force all text elements to inherit the white color */
+      color: inherit !important;
     }
 
     a {
-      color: #1E90FF !important; /* Links will now appear blue */
+      color: #1E90FF !important;
       text-decoration: none;
     }
 
@@ -37,7 +37,43 @@
     }
 
     button {
-      color: white !important; /* Ensure button text is white */
+      color: white !important;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #181818;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar-info {
+      text-align: center;
+    }
+
+    .avatar-box img {
+      border-radius: 50%;
+      width: 80px;
+    }
+
+    .name {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    .sidebar-info_more {
+      margin-top: 40px;
     }
 
     /* For responsive layout */
@@ -45,17 +81,38 @@
       .sidebar {
         width: 100%;
         position: static;
+        padding: 10px;
       }
+
       .main-content {
         padding: 1rem;
+        width: 70%; /* Make main content take 70% of the screen */
+        margin-left: auto;
+        margin-right: auto;
       }
+
       .navbar-list {
         flex-direction: column;
         align-items: flex-start;
       }
+
       .navbar-item {
         width: 100%;
         margin-bottom: 0.5rem;
+      }
+
+      /* Move the "iOS/UWP Developer" title above the avatar */
+      .sidebar-info .title {
+        margin-bottom: 10px;
+      }
+
+      /* Remove the "Show Contacts" button */
+      .info_more-btn {
+        display: none;
+      }
+
+      .sidebar-info {
+        padding-bottom: 20px;
       }
     }
 
@@ -80,17 +137,13 @@
   <main>
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
+        <div class="title">iOS/UWP Developer</div>
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Stern" width="80" />
         </figure>
         <div class="info-content">
           <h1 class="name">Stern</h1>
-          <p class="title">iOS/UWP Developer</p>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
       </div>
 
       <div class="sidebar-info_more">
@@ -153,9 +206,9 @@
       <article class="xbsx2" data-page="xbsx2">
         <header><h2 class="h2 article-title">XBSX2</h2></header>
         <section class="article-content">
-          <p>XBSX2 is a fork of PCSX2, a free and open-source PlayStation 2 (PS2) emulator. This project allows you to emulate PS2 hardware on a PC, enabling you to play your favorite PS2 games with added features and improvements.</p>
+          <p>XBSX2 is a fork of PCSX2, a free and open-source PlayStation 2 (PS2) emulator. This project allows you to emulate PS2 hardware on Xbox, enabling you to play your favorite PS2 games with added features and improvements.</p>
           <p>GitHub Repository: <a href="https://github.com/XboxEmulationHub/XBSX2" target="_blank">https://github.com/XboxEmulationHub/XBSX2</a></p>
-          <img src="./assets/images/xbsx2-screenshot.png" alt="XBSX2 Project Screenshot" class="project-image" />
+          <img src="./assets/images/xbsx2.png" alt="XBSX2 Project Screenshot" class="project-image" />
         </section>
       </article>
 
@@ -164,7 +217,7 @@
         <section class="article-content">
           <p>DolphinUWP is a fork of Dolphin Emulator, supporting GameCube and Wii games on UWP/Xbox. It is part of an ongoing effort to bring quality emulation to a wide range of platforms.</p>
           <p>GitHub Repository: <a href="https://github.com/SternXD/dolphin" target="_blank">https://github.com/SternXD/dolphin</a></p>
-          <img src="./assets/images/dolphinuwp-screenshot.png" alt="DolphinUWP Project Screenshot" class="project-image" />
+          <img src="./assets/images/dolphinuwp.png" alt="DolphinUWP Project Screenshot" class="project-image" />
         </section>
       </article>
 
@@ -173,7 +226,7 @@
         <section class="article-content">
           <p>SideStore is an iOS app that enables users to sideload apps onto their devices using just their Apple ID. It automatically refreshes apps to prevent expiration and keeps them active with your personal development certificate.</p>
           <p>GitHub Repository: <a href="https://github.com/SideStore/SideStore" target="_blank">https://github.com/SideStore/SideStore</a></p>
-          <img src="./assets/images/sidestore-screenshot.png" alt="SideStore Project Screenshot" class="project-image" />
+          <img src="./assets/images/sidestore.png" alt="SideStore Project Screenshot" class="project-image" />
         </section>
       </article>
 
@@ -182,7 +235,7 @@
         <section class="article-content">
           <p>SwiftScraper is an iOS app designed to scrape and analyze web content directly from your device. It extracts titles, paragraphs, links, and images from websites for easy browsing and analysis.</p>
           <p>GitHub Repository: <a href="https://github.com/SternXD/SwiftScraper" target="_blank">https://github.com/SternXD/SwiftScraper</a></p>
-          <img src="./assets/images/swiftscraper-screenshot.png" alt="SwiftScraper Project Screenshot" class="project-image" />
+          <img src="./assets/images/swiftscraper.png" alt="SwiftScraper Project Screenshot" class="project-image" />
         </section>
       </article>
 
