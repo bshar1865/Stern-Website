@@ -790,3 +790,31 @@ a:not(.project-link):hover,
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.article-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.article-content a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Project link specific styling */
+.article-content p:has(+ a) {
+  margin-bottom: 5px;
+}
+
+.project-link,
+a.project-link,
+.article-content a.project-link {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: var(--orange-yellow-crayola) !important;
+  text-decoration: none !important;
+  transition: color var(--transition-1);
+}
