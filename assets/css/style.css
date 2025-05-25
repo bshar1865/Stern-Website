@@ -66,7 +66,15 @@ body {
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: color var(--transition-1);
+}
+
+a:hover {
+  color: var(--vegas-gold);
+}
 
 li { list-style: none; }
 
@@ -709,6 +717,10 @@ main {
   .project-image {
     margin: 15px 0;
   }
+
+  .article-content a {
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -740,4 +752,17 @@ main {
   .about-text, .article-content {
     font-size: var(--fs-7);
   }
+
+  .article-content a {
+    max-width: 200px;
+  }
+}
+
+/* Link styles */
+.article-content a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
