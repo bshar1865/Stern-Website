@@ -602,7 +602,7 @@ main {
 
   .sidebar {
     position: relative;
-    max-height: none;
+    max-height: none !important;
     width: 100%;
     margin-bottom: 30px;
     padding: 20px;
@@ -640,8 +640,8 @@ main {
   }
 
   .sidebar-info_more {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
     margin-top: 20px;
   }
 
@@ -717,10 +717,6 @@ main {
   .project-image {
     margin: 15px 0;
   }
-
-  .article-content a {
-    max-width: 250px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -751,10 +747,6 @@ main {
 
   .about-text, .article-content {
     font-size: var(--fs-7);
-  }
-
-  .article-content a {
-    max-width: 200px;
   }
 }
 
