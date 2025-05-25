@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vCard - Portfolio</title>
+  <title>Stern - iOS/UWP Developer</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -147,7 +147,7 @@
             <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a class="contact-link">stern@sidestore.io</a>
+              <a href="mailto:stern@sidestore.io" class="contact-link">stern@sidestore.io</a>
             </div>
           </li>
           <li class="contact-item">
@@ -194,7 +194,7 @@
       <article class="about active" data-page="about">
         <header><h2 class="h2 article-title">About Me</h2></header>
         <section class="about-text">
-          <p>“I’m an iOS and UWP developer specializing in Swift, SwiftUI, and C++. I work on high-performance emulation and sideloading tools like XBSX2, DolphinUWP, SwiftScraper, and SideStore. My focus is on delivering seamless user experiences on iOS and Xbox platforms.</p>
+          <p>I'm an iOS and UWP developer specializing in Swift, SwiftUI, and C++. I work on high-performance emulation and sideloading tools like XBSX2, DolphinUWP, SwiftScraper, and SideStore. My focus is on delivering seamless user experiences on iOS and Xbox platforms.</p>
         </section>
       </article>
 
@@ -241,7 +241,8 @@
     </div>
   </main>
 
-  <!-- JavaScript to handle navigation -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
     const navLinks = document.querySelectorAll("[data-nav-link]");
     const pages = document.querySelectorAll("[data-page]");
@@ -249,19 +250,14 @@
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         const target = link.textContent.trim().toLowerCase();
-
         navLinks.forEach(btn => btn.classList.remove("active"));
         link.classList.add("active");
-
         pages.forEach(page => {
           page.classList.toggle("active", page.dataset.page === target);
         });
       });
     });
   </script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
