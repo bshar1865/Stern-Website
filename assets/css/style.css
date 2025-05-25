@@ -758,7 +758,39 @@ main {
   }
 }
 
-/* Link styles */
+/* Link styles with highest specificity */
+.project-link,
+a.project-link,
+.article-content a.project-link {
+  color: var(--orange-yellow-crayola) !important;
+  text-decoration: none !important;
+  transition: color var(--transition-1);
+}
+
+.project-link:hover,
+a.project-link:hover,
+.article-content a.project-link:hover {
+  color: var(--vegas-gold) !important;
+  text-decoration: underline !important;
+}
+
+/* Ensure all other links follow the same color scheme */
+a:not(.project-link),
+.article-content a:not(.project-link),
+.contact-link,
+.social-link {
+  color: var(--orange-yellow-crayola) !important;
+  text-decoration: none;
+  transition: color var(--transition-1);
+}
+
+a:not(.project-link):hover,
+.article-content a:not(.project-link):hover,
+.contact-link:hover,
+.social-link:hover {
+  color: var(--vegas-gold) !important;
+}
+
 .article-content a {
   display: inline-block;
   max-width: 100%;
