@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Stern - iOS/UWP Developer</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -12,118 +12,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #121212;
-      color: white !important;
-    }
-
-    article {
-      color: inherit !important;
-    }
-
-    h1, h2, h3, h4, h5, h6, p, li, span, a, button {
-      color: inherit !important;
-    }
-
-    a {
-      color: #1E90FF !important;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    button {
-      color: white !important;
-    }
-
-    .sidebar {
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      background-color: #181818;
-      padding: 20px;
-      overflow-y: auto;
-    }
-
-    .sidebar-info {
-      text-align: center;
-    }
-
-    .avatar-box img {
-      border-radius: 50%;
-      width: 80px;
-    }
-
-    .name {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-
-    .title {
-      font-size: 1rem;
-      color: #777;
-    }
-
-    .sidebar-info_more {
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 100%;
-        position: static;
-        padding: 10px;
-      }
-
-      .main-content {
-        padding: 1rem;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .navbar-list {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .navbar-item {
-        width: 100%;
-        margin-bottom: 0.5rem;
-      }
-
-      .sidebar-info .title {
-        margin-bottom: 10px;
-      }
-
-      .info_more-btn {
-        display: none;
-      }
-
-      .sidebar-info {
-        padding-bottom: 20px;
-      }
-    }
-
     [data-page] {
       display: none;
     }
-
     [data-page].active {
       display: block;
     }
-
     .project-image {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
+      margin: 15px 0;
     }
   </style>
 </head>
